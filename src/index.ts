@@ -11,7 +11,7 @@ import { DATABASE_URI, PORT } from './config';
 
 dotenv.config();
 const app = express();
-const port = PORT;
+const port = PORT || 3000;
 
 app.use(express.json());
 app.use(cors());
